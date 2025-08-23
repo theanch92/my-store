@@ -3,15 +3,35 @@
     {
       "name": "frigate",
       "image": "ghcr.io/blakeblackshear/frigate:0.13.2",
-      "isMain": true,
+      "environment": {
+        "TZ": "${TZ}"
+      },
       "internalPort": 5000,
       "volumes": [
         {
+          "hostPath": "/etc/localtime",
+          "containerPath": "/etc/localtime",
+          "readOnly": true,
+          "shared": false,
+          "private": false
+        },
+        {
           "hostPath": "${APP_DATA_DIR}/data/config",
-          "containerPath": "/config"
+          "containerPath": "/config",
+          "readOnly": false,
+          "shared": false,
+          "private": false
+        },
+        {
+          "hostPath": "${APP_DATA_DIR}/data/storage",
+          "containerPath": "/media/frigate",
+          "readOnly": false,
+          "shared": false,
+          "private": false
         }
-      ]
+      ],
+      "shmSize": "64m",
+      "isMain": true
     }
-  ],
-  "$schema": "../dynamic-compose-schema.json"
+  ]
 }
