@@ -1,8 +1,10 @@
 {
-  "$schema": "../schema.json",
+  "$schema": "../app-info-schema.json",
   "name": "Frigate",
   "id": "frigate",
   "available": true,
+  "exposable": true,
+  "dynamic_config": true,
   "short_desc": "Frigate is an open source NVR built around real-time AI object detection",
   "author": "markoceri",
   "port": 5001,
