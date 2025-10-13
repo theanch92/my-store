@@ -7,7 +7,7 @@
   "port": 8102,
   "id": "homarr",
   "tipi_version": 39,
-  "version": "0.16.0",
+  "version": "1.41.0",
   "categories": ["utilities"],
   "description": "A homepage for your server.",
   "short_desc": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
