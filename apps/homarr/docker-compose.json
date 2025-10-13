@@ -6,7 +6,8 @@
       "isMain": true,
       "internalPort": 7575,
       "environment": {
-        "TZ": "${TZ}"
+        "TZ": "${TZ}",
+        "SECRET_ENCRYPTION_KEY": "dbbc162195a0922a8c6781ec2392bcff6f54d9dd1b3c863cfb8c459e7890b1e5"
       },
       "volumes": [
         {
