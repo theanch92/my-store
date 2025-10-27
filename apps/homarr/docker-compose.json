@@ -2,13 +2,19 @@
   "services": [
     {
       "name": "homarr",
-      "image": "ghcr.io/homarr-labs/homarr:v1.42.1",
+      "image": "ghcr.io/homarr-labs/homarr:v1.43.0",
       "isMain": true,
       "internalPort": 7575,
-      "environment": {
-        "TZ": "${TZ}",
-        "SECRET_ENCRYPTION_KEY": "dbbc162195a0922a8c6781ec2392bcff6f54d9dd1b3c863cfb8c459e7890b1e5"
-      },
+      "environment": [
+        {
+          "key": "TZ",
+          "value": "${TZ}"
+        },
+        {
+          "key": "SECRET_ENCRYPTION_KEY",
+          "value": "dbbc162195a0922a8c6781ec2392bcff6f54d9dd1b3c863cfb8c459e7890b1e5"
+        }
+      ],
       "volumes": [
         {
           "hostPath": "${APP_DATA_DIR}/appdata",
