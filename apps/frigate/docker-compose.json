@@ -3,9 +3,12 @@
     {
       "name": "frigate",
       "image": "ghcr.io/blakeblackshear/frigate:0.16.2-rocm",
-      "environment": {
-        "TZ": "${TZ}"
-      },
+      "environment": [
+        {
+          "key": "TZ",
+          "value": "${TZ}"
+        }
+      ],
       "internalPort": 5000,
       "volumes": [
         {
@@ -33,5 +36,7 @@
       "shmSize": "64m",
       "isMain": true
     }
-  ]
+  ],
+  "schemaVersion": 2,
+  "$schema": "https://schemas.runtipi.io/dynamic-compose.json"
 }
