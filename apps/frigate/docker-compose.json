@@ -2,7 +2,7 @@
   "services": [
     {
       "name": "frigate",
-      "image": "ghcr.io/blakeblackshear/frigate:a510ea9",
+      "image": "ghcr.io/blakeblackshear/frigate:ef19332-rocm",
       "environment": [
         {
           "key": "TZ",
