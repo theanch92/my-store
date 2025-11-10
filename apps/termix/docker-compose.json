@@ -4,6 +4,7 @@
     {
       "name": "termix",
       "image": "ghcr.io/lukegus/termix:latest",
+      "isMain": true,
       "environment": [
         {
           "key": "PORT",
