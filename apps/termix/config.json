@@ -1,0 +1,22 @@
+{
+  "$schema": "../app-info-schema.json",
+  "name": "Termix",
+  "id": "termix",
+  "available": true,
+  "exposable": true,
+  "dynamic_config": true,
+  "short_desc": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities.",
+  "author": "Termix-SSH",
+  "port": 5002,
+  "categories": ["security"],
+  "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities.",
+  "tipi_version": 1,
+  "version": "1.8.0",
+  "source": "https://github.com/Termix-SSH/Termix",
+  "website": "https://docs.termix.site",
+  "exposable": true,
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1719136800000,
+  "updated_at": 1755887778687,
+  "min_tipi_version": "4.5.0"
+}
