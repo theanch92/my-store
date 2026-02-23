@@ -3,7 +3,7 @@
   "services": [
     {
       "name": "termix",
-      "image": "ghcr.io/lukegus/termix:release-1.11.0",
+      "image": "ghcr.io/lukegus/termix:release-1.11.1",
       "isMain": true,
       "environment": [
         {
